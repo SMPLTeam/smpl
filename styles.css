@@ -1,0 +1,134 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: normal;
+  text-size-adjust: none;
+  font-weight: normal;
+  font-style: none;
+  line-height: 1.2;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* variables */
+:root {
+  --primary: #cccccc;
+  --secondary: #dddddd;
+  --tertiary: #666666;
+  --white: #ffffff;
+  --black: #333333;
+}
+
+/* box sizes */
+.box-1920,
+.box-1080,
+.box-720,
+.box-540 {
+  margin: auto;
+}
+
+.box-1920 { max-width: 1920px; }
+.box-1080 { max-width: 1080px; }
+.box-720 { max-width: 720px; }
+.box-540 { max-width: 540px; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #efefef;
+}
+
+/* fonts */
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.5;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.title,
+.heading { font-weight: 600; }
+
+h1.title { font-size: 4.2rem; }
+
+h2.subtitle {
+  font-size: 2.7rem;
+  color: #666666;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: .9rem; }
+h6 { font-size: .6rem; }
+p { font-size: 1rem; }
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 1px solid var(--secondary);
+  border-radius: 6px;
+}
+
+nav { border-bottom: 1px solid var(--primary); }
+
+footer {
+  min-height: 3rem;
+  background-color: #dddddd;
+}
+
+hr {
+  margin-top: 1.2rem;
+  border-top: 1px solid var(--primary);
+}
+
+#nav-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#site-logo {
+  max-width: 88px;
+  border: none;
+}
+
+#site-logo:hover { filter: brightness(120%); }
+
+#email-link {
+  display: flex;
+  flex-direction: column;
+  min-width: 48px;
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  padding: .6rem;
+  justify-content: center;
+  align-items: center;
+  text-shadow: #bbbbbb 0 1px 2px;
+}
+
+#email-link:hover { background-color: var(--primary); }
+
+#header-image {
+  margin-top: 2.1rem;
+}
+
+.text-column { padding: 1.2rem; }
+
+#copyright { 
+  text-align: center;
+  padding: 1rem;
+}
+
